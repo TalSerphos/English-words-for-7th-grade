@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#0f1020">
+<title>מילים באנגלית · English Words</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<div id="app" hidden>
+  <header id="topbar">
+    <button id="nav-back" class="icon-btn" hidden aria-label="back">→</button>
+    <h1 id="topbar-title" data-i18n="app.title">מילים באנגלית</h1>
+    <div class="spacer"></div>
+    <button id="lang-toggle" class="chip" title="language">EN</button>
+    <button id="user-chip" class="chip avatar" aria-haspopup="menu"></button>
+  </header>
+
+  <main id="views">
+
+    <!-- ─────────── home ─────────── -->
+    <section id="view-home" class="view">
+      <div class="hero">
+        <p class="hello" id="home-greeting"></p>
+        <div class="hero-stats">
+          <div class="hero-stat"><b id="home-streak">0</b><span data-i18n="stats.streakDays"></span></div>
+          <div class="hero-stat"><b id="home-today-min">0</b><span data-i18n="stats.minutesToday"></span></div>
+          <div class="hero-stat"><b id="home-today-words">0</b><span data-i18n="stats.wordsToday"></span></div>
+        </div>
+        <div class="goal-ring-wrap">
+          <svg class="goal-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fg" id="goal-ring-fg" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="goal-ring-label"><b id="goal-pct">0%</b><span data-i18n="home.dailyGoal"></span></div>
+        </div>
+      </div>
+
+      <h2 data-i18n="home.chooseDeck"></h2>
+      <div id="deck-list" class="deck-list"></div>
+
+      <button id="start-practice" class="primary big" data-i18n="home.startPractice"></button>
+      <button id="go-stats" class="ghost" data-i18n="nav.stats"></button>
+    </section>
+
+    <!-- ─────────── practice ─────────── -->
+    <section id="view-practice" class="view">
+      <div class="practice-head">
+        <span id="practice-progress" class="muted"></span>
+        <span id="practice-deck" class="muted"></span>
+      </div>
+
+      <div id="card-stage">
+        <article id="card" class="card" tabindex="0" role="group" aria-roledescription="flashcard">
+          <div class="card-face card-front">
+            <span id="card-senses-chip" class="senses-chip" hidden></span>
+            <h2 id="card-word" class="word"></h2>
+            <div id="card-sentences" class="sentences"></div>
+          </div>
+          <div class="card-face card-back" id="card-back" hidden>
+            <div id="card-translations" class="translations"></div>
+          </div>
+        </article>
+        <div class="swipe-cue cue-up" aria-hidden="true">🔊</div>
+        <div class="swipe-cue cue-down" aria-hidden="true">א/ב</div>
+      </div>
+
+      <div class="pad">
+        <button class="pad-btn" data-act="prev" aria-label="previous">‹</button>
+        <button class="pad-btn" data-act="speak" aria-label="pronounce">🔊</button>
+        <button class="pad-btn" data-act="reveal" aria-label="translation">א/ב</button>
+        <button class="pad-btn" data-act="next" aria-label="next">›</button>
+      </div>
+    </section>
+
+    <!-- ─────────── quiz ─────────── -->
+    <section id="view-quiz" class="view">
+      <div id="quiz-play">
+        <div class="quiz-head">
+          <span id="quiz-progress" class="muted"></span>
+          <span id="quiz-score" class="muted"></span>
+        </div>
+        <div class="quiz-bar"><i id="quiz-bar-fill"></i></div>
+        <h2 id="quiz-word" class="word"></h2>
+        <p id="quiz-hint" class="muted center" data-i18n="quiz.pickMeaning"></p>
+        <div id="quiz-options" class="options"></div>
+      </div>
+
+      <div id="quiz-results" hidden>
+        <div class="result-hero">
+          <b id="quiz-result-score"></b>
+          <span id="quiz-result-label"></span>
+        </div>
+        <div id="quiz-missed"></div>
+        <button id="quiz-practice-missed" class="primary" data-i18n="quiz.practiceMissed"></button>
+        <button id="quiz-done" class="ghost" data-i18n="quiz.backToPractice"></button>
+      </div>
+    </section>
+
+    <!-- ─────────── stats ─────────── -->
+    <section id="view-stats" class="view">
+      <div class="level-bar">
+        <div class="level-head">
+          <span><b data-i18n="stats.level"></b> <b id="level-num">1</b></span>
+          <span id="level-xp" class="muted"></span>
+        </div>
+        <div class="xp-track"><i id="xp-fill"></i></div>
+      </div>
+
+      <div class="stat-grid" id="stat-grid"></div>
+
+      <h2 data-i18n="stats.last7"></h2>
+      <div id="chart-week" class="chart"></div>
+
+      <h2 data-i18n="stats.quizAccuracy"></h2>
+      <div id="chart-quiz" class="chart"></div>
+
+      <h2 data-i18n="stats.wordsToReview"></h2>
+      <div id="review-list" class="review-list"></div>
+
+      <h2 data-i18n="stats.awards"></h2>
+      <div id="awards-grid" class="awards-grid"></div>
+    </section>
+
+    <!-- ─────────── settings ─────────── -->
+    <section id="view-settings" class="view">
+      <label class="field">
+        <span data-i18n="settings.wordsBeforeQuiz"></span>
+        <input type="number" id="set-words-before-quiz" min="5" max="100" step="1">
+        <small data-i18n="settings.wordsBeforeQuizHelp"></small>
+      </label>
+      <label class="field">
+        <span data-i18n="settings.answerOptions"></span>
+        <input type="number" id="set-answer-options" min="2" max="6" step="1">
+        <small data-i18n="settings.answerOptionsHelp"></small>
+      </label>
+      <label class="field">
+        <span data-i18n="settings.quizLength"></span>
+        <input type="number" id="set-quiz-length" min="3" max="20" step="1">
+        <small data-i18n="settings.quizLengthHelp"></small>
+      </label>
+      <label class="field">
+        <span data-i18n="settings.dailyGoalMinutes"></span>
+        <input type="number" id="set-goal-minutes" min="1" max="120" step="1">
+      </label>
+      <label class="field">
+        <span data-i18n="settings.dailyGoalWords"></span>
+        <input type="number" id="set-goal-words" min="1" max="300" step="1">
+      </label>
+      <p id="settings-saved" class="saved" hidden data-i18n="settings.saved"></p>
+      <button id="sign-out" class="danger" data-i18n="auth.signOut"></button>
+    </section>
+  </main>
+
+  <nav id="tabbar">
+    <button data-view="home" class="tab"><span>🏠</span><i data-i18n="nav.home"></i></button>
+    <button data-view="practice" class="tab"><span>🃏</span><i data-i18n="nav.practice"></i></button>
+    <button data-view="stats" class="tab"><span>📈</span><i data-i18n="nav.stats"></i></button>
+    <button data-view="settings" class="tab"><span>⚙️</span><i data-i18n="nav.settings"></i></button>
+  </nav>
+</div>
+
+<!-- ─────────── auth ─────────── -->
+<div id="auth" hidden>
+  <div class="auth-card">
+    <h1 class="brand" data-i18n="app.title"></h1>
+    <p class="muted center" data-i18n="app.tagline"></p>
+
+    <div id="profile-picker" hidden>
+      <p class="label" data-i18n="auth.whoAreYou"></p>
+      <div id="profile-list" class="profile-list"></div>
+      <button id="show-new-account" class="ghost" data-i18n="auth.newAccount"></button>
+    </div>
+
+    <form id="auth-form" autocomplete="on">
+      <p id="auth-mode-label" class="label"></p>
+      <input id="auth-username" name="username" autocomplete="username" placeholder=" " required>
+      <label class="floating" for="auth-username" data-i18n="auth.username"></label>
+      <input id="auth-password" name="password" type="password" autocomplete="current-password" placeholder=" " required>
+      <label class="floating" for="auth-password" data-i18n="auth.password"></label>
+      <label class="check"><input type="checkbox" id="auth-remember" checked><span data-i18n="auth.staySignedIn"></span></label>
+      <p id="auth-error" class="error" hidden></p>
+      <button type="submit" class="primary" id="auth-submit"></button>
+      <button type="button" id="auth-back" class="ghost" hidden data-i18n="auth.backToProfiles"></button>
+    </form>
+    <p class="fineprint" data-i18n="auth.localOnly"></p>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<div id="quiz-offer" class="sheet" hidden>
+  <div class="sheet-inner">
+    <h2 id="quiz-offer-title"></h2>
+    <p id="quiz-offer-body" class="muted"></p>
+    <button id="quiz-offer-yes" class="primary" data-i18n="quiz.takeQuiz"></button>
+    <button id="quiz-offer-no" class="ghost" data-i18n="quiz.keepPracticing"></button>
+  </div>
+</div>
+<canvas id="confetti" hidden></canvas>
+<div id="award-pop" class="sheet" hidden>
+  <div class="sheet-inner center">
+    <div id="award-pop-icon" class="award-pop-icon"></div>
+    <h2 id="award-pop-title"></h2>
+    <p id="award-pop-desc" class="muted"></p>
+    <button id="award-pop-close" class="primary" data-i18n="awards.nice"></button>
+  </div>
+</div>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

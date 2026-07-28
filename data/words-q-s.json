@@ -1,0 +1,948 @@
+{
+ "group": "Q-S",
+ "words": [
+  {
+   "en": "question",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שאלה",
+     "sentence": "I have a question.",
+     "heSentence": "יש לי שאלה."
+    }
+   ]
+  },
+  {
+   "en": "quick",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מהיר",
+     "sentence": "He is a quick runner.",
+     "heSentence": "הוא רץ מהיר."
+    }
+   ]
+  },
+  {
+   "en": "quiet",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "שקט",
+     "sentence": "Be quiet!",
+     "heSentence": "תהיה בשקט!",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "radio",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "רדיו",
+     "sentence": "I listen to the radio.",
+     "heSentence": "אני מקשיב לרדיו."
+    }
+   ]
+  },
+  {
+   "en": "read",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "קורא",
+     "sentence": "I read a book.",
+     "heSentence": "אני קורא ספר."
+    }
+   ]
+  },
+  {
+   "en": "ready",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מוכן",
+     "sentence": "I'm ready.",
+     "heSentence": "אני מוכן.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "real",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "אמיתי",
+     "sentence": "This is a real story.",
+     "heSentence": "זה סיפור אמיתי."
+    }
+   ]
+  },
+  {
+   "en": "really",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "באמת",
+     "sentence": "I really want to come.",
+     "heSentence": "אני באמת רוצה לבוא."
+    }
+   ]
+  },
+  {
+   "en": "red",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "אדום",
+     "sentence": "The flower is red.",
+     "heSentence": "הפרח אדום."
+    }
+   ]
+  },
+  {
+   "en": "remember",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "זוכר",
+     "sentence": "I remember the day.",
+     "heSentence": "אני זוכר את היום."
+    }
+   ]
+  },
+  {
+   "en": "rest",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "נח",
+     "sentence": "I rest after school.",
+     "heSentence": "אני נח אחרי בית הספר."
+    }
+   ]
+  },
+  {
+   "en": "return",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מחזיר",
+     "sentence": "I return the book.",
+     "heSentence": "אני מחזיר את הספר."
+    }
+   ]
+  },
+  {
+   "en": "rich",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "עשיר",
+     "sentence": "The man is rich.",
+     "heSentence": "האיש עשיר."
+    }
+   ]
+  },
+  {
+   "en": "right",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ימין",
+     "sentence": "my right hand",
+     "heSentence": "יד ימין שלי",
+     "fromPdf": true
+    },
+    {
+     "pos": "adj",
+     "he": "נכונה",
+     "sentence": "the right answer",
+     "heSentence": "התשובה הנכונה",
+     "heWordInSentence": "הנכונה",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "right now",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "ברגע זה",
+     "sentence": "I need it right now.",
+     "heSentence": "אני צריך את זה ברגע זה.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "road",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "כביש",
+     "sentence": "The road is long.",
+     "heSentence": "הכביש ארוך."
+    }
+   ]
+  },
+  {
+   "en": "room",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חדר",
+     "sentence": "My room is small.",
+     "heSentence": "החדר שלי קטן."
+    }
+   ]
+  },
+  {
+   "en": "round",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "עגול",
+     "sentence": "The table is round.",
+     "heSentence": "השולחן עגול."
+    }
+   ]
+  },
+  {
+   "en": "rule",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "כלל",
+     "sentence": "This is an important rule.",
+     "heSentence": "זה כלל חשוב."
+    }
+   ]
+  },
+  {
+   "en": "run",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "רץ",
+     "sentence": "I run every morning.",
+     "heSentence": "אני רץ כל בוקר."
+    }
+   ]
+  },
+  {
+   "en": "sad",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "עצוב",
+     "sentence": "The story is sad.",
+     "heSentence": "הסיפור עצוב."
+    }
+   ]
+  },
+  {
+   "en": "the same (as)",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "אותו הדבר",
+     "sentence": "My bag is the same as yours.",
+     "heSentence": "התיק שלי אותו הדבר כמו שלך."
+    }
+   ]
+  },
+  {
+   "en": "Saturday",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שבת",
+     "sentence": "We rest on Saturday.",
+     "heSentence": "אנחנו נחים בשבת."
+    }
+   ]
+  },
+  {
+   "en": "say",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "אומר",
+     "sentence": "I say the truth.",
+     "heSentence": "אני אומר את האמת."
+    }
+   ]
+  },
+  {
+   "en": "school",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "בית ספר",
+     "sentence": "My school is big.",
+     "heSentence": "בית הספר שלי גדול.",
+     "heWordInSentence": "בית הספר"
+    }
+   ]
+  },
+  {
+   "en": "second",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שני",
+     "sentence": "I was happy with second place.",
+     "heSentence": "הייתי שמח עם המקום השני.",
+     "heWordInSentence": "השני",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "see",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "רואה",
+     "sentence": "I see the moon.",
+     "heSentence": "אני רואה את הירח."
+    }
+   ]
+  },
+  {
+   "en": "send",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "שולח",
+     "sentence": "I send a letter.",
+     "heSentence": "אני שולח מכתב."
+    }
+   ]
+  },
+  {
+   "en": "sentence",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "משפט",
+     "sentence": "Write a short sentence.",
+     "heSentence": "תכתוב משפט קצר."
+    }
+   ]
+  },
+  {
+   "en": "September",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ספטמבר",
+     "sentence": "The year starts in September.",
+     "heSentence": "השנה מתחילה בספטמבר."
+    }
+   ]
+  },
+  {
+   "en": "seven",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שבע",
+     "sentence": "There are seven days in a week.",
+     "heSentence": "יש שבעה ימים בשבוע.",
+     "heWordInSentence": "שבעה"
+    }
+   ]
+  },
+  {
+   "en": "seventeen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שבע עשרה",
+     "sentence": "My sister is seventeen.",
+     "heSentence": "אחותי בת שבע עשרה."
+    }
+   ]
+  },
+  {
+   "en": "seventy",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שבעים",
+     "sentence": "My grandmother is seventy.",
+     "heSentence": "סבתא שלי בת שבעים."
+    }
+   ]
+  },
+  {
+   "en": "she",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "היא",
+     "sentence": "She is my sister.",
+     "heSentence": "היא האחות שלי."
+    }
+   ]
+  },
+  {
+   "en": "short",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "קצר",
+     "sentence": "The movie was short.",
+     "heSentence": "הסרט היה קצר.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "shout",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "צועק",
+     "sentence": "Don't shout!",
+     "heSentence": "אל תצעק!",
+     "heWordInSentence": "תצעק"
+    }
+   ]
+  },
+  {
+   "en": "show",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מראה",
+     "sentence": "I show you the picture.",
+     "heSentence": "אני מראה לך את התמונה."
+    }
+   ]
+  },
+  {
+   "en": "shut",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "סוגר",
+     "sentence": "Shut the door, please.",
+     "heSentence": "תסגור את הדלת, בבקשה.",
+     "heWordInSentence": "תסגור"
+    },
+    {
+     "pos": "adj",
+     "he": "סגור",
+     "sentence": "The window is shut.",
+     "heSentence": "החלון סגור."
+    }
+   ]
+  },
+  {
+   "en": "sick",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "חולה",
+     "sentence": "My brother is sick.",
+     "heSentence": "האח שלי חולה."
+    }
+   ]
+  },
+  {
+   "en": "side",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "צד",
+     "sentence": "Sit on this side.",
+     "heSentence": "שב בצד הזה."
+    }
+   ]
+  },
+  {
+   "en": "sign",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שלט",
+     "sentence": "Read the sign.",
+     "heSentence": "תקרא את השלט."
+    }
+   ]
+  },
+  {
+   "en": "simple",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "פשוט",
+     "sentence": "The answer is simple.",
+     "heSentence": "התשובה פשוטה.",
+     "heWordInSentence": "פשוטה"
+    }
+   ]
+  },
+  {
+   "en": "sing",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "שר",
+     "sentence": "I sing a song.",
+     "heSentence": "אני שר שיר."
+    }
+   ]
+  },
+  {
+   "en": "sister",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אחות",
+     "sentence": "My sister is young.",
+     "heSentence": "האחות שלי צעירה."
+    }
+   ]
+  },
+  {
+   "en": "sit",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "יושב",
+     "sentence": "I sit on the chair.",
+     "heSentence": "אני יושב על הכיסא."
+    }
+   ]
+  },
+  {
+   "en": "six",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שש",
+     "sentence": "I have six pens.",
+     "heSentence": "יש לי שישה עטים.",
+     "heWordInSentence": "שישה"
+    }
+   ]
+  },
+  {
+   "en": "sixteen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שש עשרה",
+     "sentence": "My cousin is sixteen.",
+     "heSentence": "בן הדוד שלי בן שש עשרה."
+    }
+   ]
+  },
+  {
+   "en": "sixty",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שישים",
+     "sentence": "An hour has sixty minutes.",
+     "heSentence": "בשעה יש שישים דקות."
+    }
+   ]
+  },
+  {
+   "en": "size",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מידה",
+     "sentence": "What size is the shirt?",
+     "heSentence": "מה המידה של החולצה?",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "sky",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שמיים",
+     "sentence": "The sky is blue.",
+     "heSentence": "השמיים כחולים."
+    }
+   ]
+  },
+  {
+   "en": "sleep",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "ישן",
+     "sentence": "I sleep eight hours.",
+     "heSentence": "אני ישן שמונה שעות."
+    }
+   ]
+  },
+  {
+   "en": "slow",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "איטי",
+     "sentence": "The bus is slow.",
+     "heSentence": "האוטובוס איטי."
+    }
+   ]
+  },
+  {
+   "en": "small",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "קטן (בגודל)",
+     "sentence": "The box is small.",
+     "heSentence": "הקופסה קטנה.",
+     "heWordInSentence": "קטנה"
+    }
+   ]
+  },
+  {
+   "en": "smart",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "חכם",
+     "sentence": "You look very smart!",
+     "heSentence": "אתה נראה מאוד חכם!",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "smile",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חיוך",
+     "sentence": "She has a nice smile.",
+     "heSentence": "יש לה חיוך נחמד."
+    },
+    {
+     "pos": "v",
+     "he": "מחייך",
+     "sentence": "I smile at my friend.",
+     "heSentence": "אני מחייך לחבר שלי."
+    }
+   ]
+  },
+  {
+   "en": "so",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "כל כך",
+     "sentence": "I am so tired.",
+     "heSentence": "אני כל כך עייף."
+    }
+   ]
+  },
+  {
+   "en": "some",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "מספר",
+     "sentence": "Some children came late.",
+     "heSentence": "מספר ילדים הגיעו מאוחר."
+    }
+   ]
+  },
+  {
+   "en": "somebody",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "מישהו",
+     "sentence": "Somebody is at the door.",
+     "heSentence": "מישהו ליד הדלת."
+    }
+   ]
+  },
+  {
+   "en": "something",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "משהו",
+     "sentence": "I want something to eat.",
+     "heSentence": "אני רוצה משהו לאכול."
+    }
+   ]
+  },
+  {
+   "en": "sometimes",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "לפעמים",
+     "sentence": "Sometimes I walk to school.",
+     "heSentence": "לפעמים אני הולך לבית הספר."
+    }
+   ]
+  },
+  {
+   "en": "son",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "בן",
+     "sentence": "His son is five.",
+     "heSentence": "הבן שלו בן חמש."
+    }
+   ]
+  },
+  {
+   "en": "soon",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "בקרוב",
+     "sentence": "The bus comes soon.",
+     "heSentence": "האוטובוס מגיע בקרוב."
+    }
+   ]
+  },
+  {
+   "en": "song",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שיר",
+     "sentence": "This song is new.",
+     "heSentence": "השיר הזה חדש."
+    }
+   ]
+  },
+  {
+   "en": "sorry",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מצטער",
+     "sentence": "I'm sorry.",
+     "heSentence": "אני מצטער.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "speak",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מדבר",
+     "sentence": "I speak English.",
+     "heSentence": "אני מדבר אנגלית."
+    }
+   ]
+  },
+  {
+   "en": "special",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מיוחד",
+     "sentence": "Today is a special day.",
+     "heSentence": "היום יום מיוחד."
+    }
+   ]
+  },
+  {
+   "en": "spell",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מאיית",
+     "sentence": "I spell my name.",
+     "heSentence": "אני מאיית את השם שלי."
+    }
+   ]
+  },
+  {
+   "en": "sport",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ספורט",
+     "sentence": "I love sport.",
+     "heSentence": "אני אוהב ספורט."
+    }
+   ]
+  },
+  {
+   "en": "spring",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אביב",
+     "sentence": "The flowers grow in spring.",
+     "heSentence": "הפרחים גדלים באביב."
+    }
+   ]
+  },
+  {
+   "en": "start",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מתחיל",
+     "sentence": "The film starts at eight.",
+     "heSentence": "הסרט מתחיל בשמונה."
+    }
+   ]
+  },
+  {
+   "en": "still",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "עדיין",
+     "sentence": "They're still waiting.",
+     "heSentence": "הם עדיין מחכים.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "story",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "סיפור",
+     "sentence": "The story is long.",
+     "heSentence": "הסיפור ארוך."
+    }
+   ]
+  },
+  {
+   "en": "tell a story",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "מספר סיפור",
+     "sentence": "Tell a story, please.",
+     "heSentence": "ספר סיפור, בבקשה.",
+     "heWordInSentence": "ספר סיפור",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "straight",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "ישר",
+     "sentence": "Go straight, then turn left.",
+     "heSentence": "לך ישר, אחר כך פנה שמאלה."
+    }
+   ]
+  },
+  {
+   "en": "strong",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "חזק",
+     "sentence": "My brother is strong.",
+     "heSentence": "האח שלי חזק."
+    }
+   ]
+  },
+  {
+   "en": "student",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "סטודנט",
+     "sentence": "My sister is a student.",
+     "heSentence": "אחותי סטודנטית.",
+     "heWordInSentence": "סטודנטית"
+    }
+   ]
+  },
+  {
+   "en": "suddenly",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "פתאום",
+     "sentence": "Suddenly the door opened.",
+     "heSentence": "פתאום הדלת נפתחה."
+    }
+   ]
+  },
+  {
+   "en": "summer",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "קיץ",
+     "sentence": "It is hot in summer.",
+     "heSentence": "חם בקיץ."
+    }
+   ]
+  },
+  {
+   "en": "sun",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שמש",
+     "sentence": "The sun is strong.",
+     "heSentence": "השמש חזקה."
+    }
+   ]
+  },
+  {
+   "en": "Sunday",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "יום ראשון",
+     "sentence": "School starts on Sunday.",
+     "heSentence": "בית הספר מתחיל ביום ראשון."
+    }
+   ]
+  },
+  {
+   "en": "supper",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ארוחת ערב",
+     "sentence": "We eat supper at seven.",
+     "heSentence": "אנחנו אוכלים ארוחת ערב בשבע."
+    }
+   ]
+  },
+  {
+   "en": "sure",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "בטוח",
+     "sentence": "I am sure.",
+     "heSentence": "אני בטוח."
+    }
+   ]
+  }
+ ]
+}

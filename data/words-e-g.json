@@ -1,0 +1,985 @@
+{
+ "group": "E-G",
+ "words": [
+  {
+   "en": "each",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "כל אחד",
+     "sentence": "Each child gets a book.",
+     "heSentence": "כל אחד מהילדים מקבל ספר."
+    }
+   ]
+  },
+  {
+   "en": "early",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "מוקדם",
+     "sentence": "I wake up early.",
+     "heSentence": "אני קם מוקדם."
+    }
+   ]
+  },
+  {
+   "en": "ears",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אוזניים",
+     "sentence": "My ears hurt.",
+     "heSentence": "האוזניים שלי כואבות."
+    }
+   ]
+  },
+  {
+   "en": "easy",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "קל",
+     "sentence": "The test is easy.",
+     "heSentence": "המבחן קל."
+    }
+   ]
+  },
+  {
+   "en": "eat",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "אוכל",
+     "sentence": "I eat an apple.",
+     "heSentence": "אני אוכל תפוח."
+    }
+   ]
+  },
+  {
+   "en": "eighteen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שמונה עשרה",
+     "sentence": "My sister is eighteen.",
+     "heSentence": "אחותי בת שמונה עשרה."
+    }
+   ]
+  },
+  {
+   "en": "eighty",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "שמונים",
+     "sentence": "Grandpa is eighty.",
+     "heSentence": "סבא בן שמונים."
+    }
+   ]
+  },
+  {
+   "en": "eleven",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "אחת עשרה",
+     "sentence": "The lesson starts at eleven.",
+     "heSentence": "השיעור מתחיל באחת עשרה."
+    }
+   ]
+  },
+  {
+   "en": "email",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אימייל",
+     "sentence": "I send an email.",
+     "heSentence": "אני שולח אימייל."
+    }
+   ]
+  },
+  {
+   "en": "the end",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "הסוף",
+     "sentence": "This is the end of the film.",
+     "heSentence": "זה הסוף של הסרט."
+    }
+   ]
+  },
+  {
+   "en": "in the end",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "בסוף",
+     "sentence": "In the end we won.",
+     "heSentence": "בסוף ניצחנו."
+    }
+   ]
+  },
+  {
+   "en": "English",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אנגלית",
+     "sentence": "I learn English.",
+     "heSentence": "אני לומד אנגלית."
+    }
+   ]
+  },
+  {
+   "en": "enjoy",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "נהנה",
+     "sentence": "I enjoy the game.",
+     "heSentence": "אני נהנה מהמשחק."
+    }
+   ]
+  },
+  {
+   "en": "enough",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "מספיק",
+     "sentence": "I have enough money.",
+     "heSentence": "יש לי מספיק כסף."
+    }
+   ]
+  },
+  {
+   "en": "enter",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "נכנס",
+     "sentence": "He enters the room.",
+     "heSentence": "הוא נכנס לחדר."
+    }
+   ]
+  },
+  {
+   "en": "evening",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ערב",
+     "sentence": "We eat in the evening.",
+     "heSentence": "אנחנו אוכלים בערב."
+    }
+   ]
+  },
+  {
+   "en": "every",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "כל",
+     "sentence": "Every child has a book.",
+     "heSentence": "לכל ילד יש ספר."
+    }
+   ]
+  },
+  {
+   "en": "everybody",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "כולם",
+     "sentence": "Everybody is here.",
+     "heSentence": "כולם כאן."
+    }
+   ]
+  },
+  {
+   "en": "everyone",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "כל אחד",
+     "sentence": "Everyone knows the song.",
+     "heSentence": "כל אחד מכיר את השיר."
+    }
+   ]
+  },
+  {
+   "en": "everything",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "הכל",
+     "sentence": "Everything is ready.",
+     "heSentence": "הכל מוכן."
+    }
+   ]
+  },
+  {
+   "en": "example",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "דוגמה",
+     "sentence": "This is a good example.",
+     "heSentence": "זו דוגמה טובה."
+    }
+   ]
+  },
+  {
+   "en": "for example",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "לדוגמה",
+     "sentence": "I like fruit, for example apples.",
+     "heSentence": "אני אוהב פירות, לדוגמה תפוחים."
+    }
+   ]
+  },
+  {
+   "en": "excuse me",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "סליחה",
+     "sentence": "Excuse me, where is the door?",
+     "heSentence": "סליחה, איפה הדלת?"
+    }
+   ]
+  },
+  {
+   "en": "exercise",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "תרגיל",
+     "sentence": "This exercise is easy.",
+     "heSentence": "התרגיל הזה קל."
+    }
+   ]
+  },
+  {
+   "en": "expensive",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "יקר",
+     "sentence": "The car is expensive.",
+     "heSentence": "המכונית יקרה.",
+     "heWordInSentence": "יקרה"
+    }
+   ]
+  },
+  {
+   "en": "extra",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "נוסף",
+     "sentence": "I need an extra chair.",
+     "heSentence": "אני צריך כיסא נוסף."
+    }
+   ]
+  },
+  {
+   "en": "eyes",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "עיניים",
+     "sentence": "Her eyes are green.",
+     "heSentence": "העיניים שלה ירוקות."
+    }
+   ]
+  },
+  {
+   "en": "face",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פנים",
+     "sentence": "Wash your face.",
+     "heSentence": "תשטוף את הפנים."
+    }
+   ]
+  },
+  {
+   "en": "in fact",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "למעשה",
+     "sentence": "In fact, I am happy.",
+     "heSentence": "למעשה, אני מאושר."
+    }
+   ]
+  },
+  {
+   "en": "fair",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "הוגן",
+     "sentence": "That's not fair!",
+     "heSentence": "זה לא הוגן!",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "fall",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "נופל",
+     "sentence": "The leaves fall.",
+     "heSentence": "העלים נופלים.",
+     "heWordInSentence": "נופלים"
+    }
+   ]
+  },
+  {
+   "en": "family",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "משפחה",
+     "sentence": "My family is big.",
+     "heSentence": "המשפחה שלי גדולה."
+    }
+   ]
+  },
+  {
+   "en": "far",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "רחוק",
+     "sentence": "The school is far.",
+     "heSentence": "בית הספר רחוק."
+    }
+   ]
+  },
+  {
+   "en": "fast",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "מהר",
+     "sentence": "They run fast.",
+     "heSentence": "הם רצים מהר.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "father",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אב",
+     "sentence": "My father works.",
+     "heSentence": "אבי עובד.",
+     "heWordInSentence": "אבי"
+    }
+   ]
+  },
+  {
+   "en": "favorite",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "אהוב",
+     "sentence": "This is my favorite song.",
+     "heSentence": "זה השיר האהוב שלי.",
+     "heWordInSentence": "האהוב"
+    }
+   ]
+  },
+  {
+   "en": "February",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פברואר",
+     "sentence": "It rains in February.",
+     "heSentence": "יורד גשם בפברואר."
+    }
+   ]
+  },
+  {
+   "en": "feel",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מרגיש",
+     "sentence": "I feel good.",
+     "heSentence": "אני מרגיש טוב."
+    }
+   ]
+  },
+  {
+   "en": "a few",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "כמה",
+     "sentence": "I have a few books.",
+     "heSentence": "יש לי כמה ספרים."
+    }
+   ]
+  },
+  {
+   "en": "fifteen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "חמש עשרה",
+     "sentence": "I am fifteen.",
+     "heSentence": "אני בן חמש עשרה."
+    }
+   ]
+  },
+  {
+   "en": "fifth",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "חמישי",
+     "sentence": "This is the fifth day.",
+     "heSentence": "זה היום החמישי.",
+     "heWordInSentence": "החמישי"
+    }
+   ]
+  },
+  {
+   "en": "fifty",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "חמישים",
+     "sentence": "The book costs fifty shekels.",
+     "heSentence": "הספר עולה חמישים שקלים."
+    }
+   ]
+  },
+  {
+   "en": "film",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "סרט",
+     "sentence": "The film is long.",
+     "heSentence": "הסרט ארוך."
+    }
+   ]
+  },
+  {
+   "en": "find",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מוצא",
+     "sentence": "I find the key.",
+     "heSentence": "אני מוצא את המפתח."
+    }
+   ]
+  },
+  {
+   "en": "find out",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מגלה",
+     "sentence": "I find out the answer.",
+     "heSentence": "אני מגלה את התשובה."
+    }
+   ]
+  },
+  {
+   "en": "fine",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "נאה",
+     "sentence": "a fine day",
+     "heSentence": "יום נאה",
+     "fromPdf": true
+    },
+    {
+     "pos": "adj",
+     "he": "בסדר",
+     "sentence": "Fine!",
+     "heSentence": "בסדר!",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "finish",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מסיים",
+     "sentence": "I finish the exercise.",
+     "heSentence": "אני מסיים את התרגיל."
+    }
+   ]
+  },
+  {
+   "en": "fire",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אש",
+     "sentence": "The fire is hot.",
+     "heSentence": "האש חמה."
+    }
+   ]
+  },
+  {
+   "en": "first",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "ראשון",
+     "sentence": "This is the first day.",
+     "heSentence": "זה היום הראשון.",
+     "heWordInSentence": "הראשון"
+    }
+   ]
+  },
+  {
+   "en": "five",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "חמש",
+     "sentence": "I have five books.",
+     "heSentence": "יש לי חמישה ספרים.",
+     "heWordInSentence": "חמישה"
+    }
+   ]
+  },
+  {
+   "en": "flower",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פרח",
+     "sentence": "The flower is white.",
+     "heSentence": "הפרח לבן."
+    }
+   ]
+  },
+  {
+   "en": "fly",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "עף",
+     "sentence": "The bird flies.",
+     "heSentence": "הציפור עפה.",
+     "heWordInSentence": "עפה"
+    }
+   ]
+  },
+  {
+   "en": "food",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מזון",
+     "sentence": "The food is good.",
+     "heSentence": "המזון טוב."
+    }
+   ]
+  },
+  {
+   "en": "foot, feet",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "רגל",
+     "sentence": "My foot hurts.",
+     "heSentence": "הרגל שלי כואבת."
+    }
+   ]
+  },
+  {
+   "en": "for",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "בשביל",
+     "sentence": "This is for you.",
+     "heSentence": "זה בשבילך."
+    }
+   ]
+  },
+  {
+   "en": "forget",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "שוכח",
+     "sentence": "I forget the word.",
+     "heSentence": "אני שוכח את המילה."
+    }
+   ]
+  },
+  {
+   "en": "forty",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "ארבעים",
+     "sentence": "My mother is forty.",
+     "heSentence": "אמא שלי בת ארבעים."
+    }
+   ]
+  },
+  {
+   "en": "four",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "ארבע",
+     "sentence": "I have four pens.",
+     "heSentence": "יש לי ארבעה עטים.",
+     "heWordInSentence": "ארבעה"
+    }
+   ]
+  },
+  {
+   "en": "fourteen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "ארבע עשרה",
+     "sentence": "My brother is fourteen.",
+     "heSentence": "אחי בן ארבע עשרה."
+    }
+   ]
+  },
+  {
+   "en": "fourth",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "רביעי",
+     "sentence": "This is the fourth day.",
+     "heSentence": "זה היום הרביעי.",
+     "heWordInSentence": "הרביעי"
+    }
+   ]
+  },
+  {
+   "en": "free",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "פנוי",
+     "sentence": "I'm free this afternoon.",
+     "heSentence": "אני פנוי אחר הצהריים.",
+     "fromPdf": true
+    },
+    {
+     "pos": "adj",
+     "he": "חינם",
+     "sentence": "It costs nothing. It's free.",
+     "heSentence": "זה לא עולה כלום. זה חינם.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "Friday",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "יום שישי",
+     "sentence": "We rest on Friday.",
+     "heSentence": "אנחנו נחים ביום שישי."
+    }
+   ]
+  },
+  {
+   "en": "friend",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חבר",
+     "sentence": "My friend is nice.",
+     "heSentence": "החבר שלי נחמד."
+    }
+   ]
+  },
+  {
+   "en": "from",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "מ",
+     "sentence": "I come from Israel.",
+     "heSentence": "אני בא מישראל."
+    }
+   ]
+  },
+  {
+   "en": "in front of",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "מול",
+     "sentence": "The car is in front of the house.",
+     "heSentence": "המכונית מול הבית."
+    }
+   ]
+  },
+  {
+   "en": "full",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מלא",
+     "sentence": "The glass is full.",
+     "heSentence": "הכוס מלאה.",
+     "heWordInSentence": "מלאה"
+    }
+   ]
+  },
+  {
+   "en": "funny",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "מצחיק",
+     "sentence": "The film is funny.",
+     "heSentence": "הסרט מצחיק."
+    }
+   ]
+  },
+  {
+   "en": "game",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "משחק",
+     "sentence": "The game is fun.",
+     "heSentence": "המשחק כיף."
+    }
+   ]
+  },
+  {
+   "en": "garden",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "גינה",
+     "sentence": "We sit in the garden.",
+     "heSentence": "אנחנו יושבים בגינה."
+    }
+   ]
+  },
+  {
+   "en": "get",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מקבל",
+     "sentence": "I get a present.",
+     "heSentence": "אני מקבל מתנה."
+    }
+   ]
+  },
+  {
+   "en": "girl",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ילדה",
+     "sentence": "The girl reads.",
+     "heSentence": "הילדה קוראת."
+    }
+   ]
+  },
+  {
+   "en": "give",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "נותן",
+     "sentence": "I give you a book.",
+     "heSentence": "אני נותן לך ספר."
+    }
+   ]
+  },
+  {
+   "en": "glad",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "שמח",
+     "sentence": "I am glad you came.",
+     "heSentence": "אני שמח שבאת."
+    }
+   ]
+  },
+  {
+   "en": "glass",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "כוס",
+     "sentence": "The glass is on the table.",
+     "heSentence": "הכוס על השולחן."
+    }
+   ]
+  },
+  {
+   "en": "go",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "הולך",
+     "sentence": "I go to school.",
+     "heSentence": "אני הולך לבית הספר."
+    }
+   ]
+  },
+  {
+   "en": "go on",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "ממשיך",
+     "sentence": "He goes on with the story.",
+     "heSentence": "הוא ממשיך עם הסיפור."
+    }
+   ]
+  },
+  {
+   "en": "going to",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "עומד ל",
+     "sentence": "I am going to sleep.",
+     "heSentence": "אני עומד לישון."
+    }
+   ]
+  },
+  {
+   "en": "good",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "טוב",
+     "sentence": "This is a good book.",
+     "heSentence": "זה ספר טוב."
+    }
+   ]
+  },
+  {
+   "en": "good at",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "טוב ב",
+     "sentence": "I am good at math.",
+     "heSentence": "אני טוב במתמטיקה."
+    }
+   ]
+  },
+  {
+   "en": "goodbye",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "להתראות",
+     "sentence": "Goodbye, see you tomorrow!",
+     "heSentence": "להתראות, נתראה מחר!"
+    }
+   ]
+  },
+  {
+   "en": "grade",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "כיתה",
+     "sentence": "I study in the sixth grade.",
+     "heSentence": "אני לומד בכיתה שישית.",
+     "fromPdf": true
+    },
+    {
+     "pos": "n",
+     "he": "ציון",
+     "sentence": "My final grade was 90.",
+     "heSentence": "הציון הסופי שלי היה 90.",
+     "heWordInSentence": "הציון",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "great",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "נהדר",
+     "sentence": "The party was great.",
+     "heSentence": "המסיבה הייתה נהדרת.",
+     "heWordInSentence": "נהדרת"
+    }
+   ]
+  },
+  {
+   "en": "green",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "ירוק",
+     "sentence": "The tree is green.",
+     "heSentence": "העץ ירוק."
+    }
+   ]
+  },
+  {
+   "en": "grow",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "גדל",
+     "sentence": "The tree grows.",
+     "heSentence": "העץ גדל."
+    }
+   ]
+  },
+  {
+   "en": "guess",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ניחוש",
+     "sentence": "That is a good guess.",
+     "heSentence": "זה ניחוש טוב."
+    },
+    {
+     "pos": "v",
+     "he": "מנחש",
+     "sentence": "I guess the answer.",
+     "heSentence": "אני מנחש את התשובה."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1269 @@
+{
+ "group": "M-P",
+ "words": [
+  {
+   "en": "make",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מכין",
+     "sentence": "I make a cake.",
+     "heSentence": "אני מכין עוגה."
+    }
+   ]
+  },
+  {
+   "en": "man, men",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "איש",
+     "sentence": "The man works here.",
+     "heSentence": "האיש עובד כאן."
+    }
+   ]
+  },
+  {
+   "en": "many",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "רבים",
+     "sentence": "Many children came.",
+     "heSentence": "ילדים רבים הגיעו."
+    }
+   ]
+  },
+  {
+   "en": "how many?",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "כמה",
+     "sentence": "I know how many books are here.",
+     "heSentence": "אני יודע כמה ספרים יש כאן.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "March",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מרץ",
+     "sentence": "Spring begins in March.",
+     "heSentence": "האביב מתחיל במרץ."
+    }
+   ]
+  },
+  {
+   "en": "matter",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "משנה",
+     "sentence": "It doesn't matter.",
+     "heSentence": "זה לא משנה.",
+     "fromPdf": true
+    },
+    {
+     "pos": "n",
+     "he": "עניין",
+     "sentence": "What's the matter?",
+     "heSentence": "מה העניין?",
+     "heWordInSentence": "העניין",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "May",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מאי",
+     "sentence": "The flowers grow in May.",
+     "heSentence": "הפרחים גדלים במאי."
+    }
+   ]
+  },
+  {
+   "en": "maybe",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "אולי",
+     "sentence": "Maybe he will come.",
+     "heSentence": "אולי הוא יבוא."
+    }
+   ]
+  },
+  {
+   "en": "me",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "אותי",
+     "sentence": "She sees me.",
+     "heSentence": "היא רואה אותי."
+    }
+   ]
+  },
+  {
+   "en": "mean",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מתכוון",
+     "sentence": "I mean it.",
+     "heSentence": "אני מתכוון לזה.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "meaning",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "משמעות",
+     "sentence": "What is the meaning of this word?",
+     "heSentence": "מה המשמעות של המילה הזאת?"
+    }
+   ]
+  },
+  {
+   "en": "meet",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "פוגש",
+     "sentence": "I meet my friend.",
+     "heSentence": "אני פוגש את החבר שלי."
+    }
+   ]
+  },
+  {
+   "en": "meeting",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פגישה",
+     "sentence": "The meeting is long.",
+     "heSentence": "הפגישה ארוכה."
+    }
+   ]
+  },
+  {
+   "en": "memory",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "זיכרון",
+     "sentence": "I have a good memory.",
+     "heSentence": "יש לי זיכרון טוב."
+    }
+   ]
+  },
+  {
+   "en": "message",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "הודעה",
+     "sentence": "I send a message.",
+     "heSentence": "אני שולח הודעה."
+    }
+   ]
+  },
+  {
+   "en": "middle",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אמצע",
+     "sentence": "The table is in the middle.",
+     "heSentence": "השולחן באמצע."
+    }
+   ]
+  },
+  {
+   "en": "milk",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חלב",
+     "sentence": "I drink milk.",
+     "heSentence": "אני שותה חלב."
+    }
+   ]
+  },
+  {
+   "en": "mind",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "אכפת",
+     "sentence": "Do you mind?",
+     "heSentence": "אכפת לך?",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "minus",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "מינוס",
+     "sentence": "Ten minus two is eight.",
+     "heSentence": "עשר מינוס שתיים זה שמונה."
+    }
+   ]
+  },
+  {
+   "en": "minute",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "דקה",
+     "sentence": "Wait one minute.",
+     "heSentence": "חכה דקה אחת."
+    }
+   ]
+  },
+  {
+   "en": "mistake",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "טעות",
+     "sentence": "I made a mistake.",
+     "heSentence": "עשיתי טעות."
+    }
+   ]
+  },
+  {
+   "en": "mix",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מערבב",
+     "sentence": "I mix the colors.",
+     "heSentence": "אני מערבב את הצבעים."
+    }
+   ]
+  },
+  {
+   "en": "mom / mum",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אמא",
+     "sentence": "My mom cooks well.",
+     "heSentence": "אמא שלי מבשלת טוב."
+    }
+   ]
+  },
+  {
+   "en": "Monday",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "יום שני",
+     "sentence": "School starts on Monday.",
+     "heSentence": "בית הספר מתחיל ביום שני."
+    }
+   ]
+  },
+  {
+   "en": "money",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "כסף",
+     "sentence": "I have no money.",
+     "heSentence": "אין לי כסף."
+    }
+   ]
+  },
+  {
+   "en": "month",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חודש",
+     "sentence": "The month is over.",
+     "heSentence": "החודש נגמר."
+    }
+   ]
+  },
+  {
+   "en": "moon",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "ירח",
+     "sentence": "The moon is big tonight.",
+     "heSentence": "הירח גדול הלילה."
+    }
+   ]
+  },
+  {
+   "en": "more",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "יותר",
+     "sentence": "I want more water.",
+     "heSentence": "אני רוצה יותר מים."
+    }
+   ]
+  },
+  {
+   "en": "morning",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "בוקר",
+     "sentence": "I run in the morning.",
+     "heSentence": "אני רץ בבוקר."
+    }
+   ]
+  },
+  {
+   "en": "most",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "הכי",
+     "sentence": "This is the most important thing.",
+     "heSentence": "זה הדבר הכי חשוב."
+    }
+   ]
+  },
+  {
+   "en": "mother",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אם",
+     "sentence": "My mother cooks.",
+     "heSentence": "אמי מבשלת.",
+     "heWordInSentence": "אמי"
+    }
+   ]
+  },
+  {
+   "en": "mouth",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פה",
+     "sentence": "Open your mouth.",
+     "heSentence": "תפתח את הפה."
+    }
+   ]
+  },
+  {
+   "en": "move",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "זז",
+     "sentence": "The car moves slowly.",
+     "heSentence": "המכונית זזה לאט.",
+     "heWordInSentence": "זזה"
+    }
+   ]
+  },
+  {
+   "en": "movie",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "סרט קולנוע",
+     "sentence": "I watch a movie.",
+     "heSentence": "אני צופה בסרט קולנוע."
+    }
+   ]
+  },
+  {
+   "en": "Mr",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מר",
+     "sentence": "Mr Cohen is my teacher.",
+     "heSentence": "מר כהן הוא המורה שלי."
+    }
+   ]
+  },
+  {
+   "en": "Mrs",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "גברת (נשואה)",
+     "sentence": "Mrs Levi lives here.",
+     "heSentence": "גברת לוי גרה כאן.",
+     "heWordInSentence": "גברת"
+    }
+   ]
+  },
+  {
+   "en": "Ms",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "גברת",
+     "sentence": "Ms Dan is our doctor.",
+     "heSentence": "גברת דן היא הרופאה שלנו."
+    }
+   ]
+  },
+  {
+   "en": "much",
+   "senses": [
+    {
+     "pos": "det",
+     "he": "הרבה",
+     "sentence": "I don't have much time.",
+     "heSentence": "אין לי הרבה זמן."
+    }
+   ]
+  },
+  {
+   "en": "How much?",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "כמה עולה",
+     "sentence": "How much is the book?",
+     "heSentence": "כמה עולה הספר?",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "music",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מוזיקה",
+     "sentence": "I love music.",
+     "heSentence": "אני אוהב מוזיקה."
+    }
+   ]
+  },
+  {
+   "en": "my",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "שלי",
+     "sentence": "This is my bag.",
+     "heSentence": "זה התיק שלי."
+    }
+   ]
+  },
+  {
+   "en": "myself",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "עצמי",
+     "sentence": "I wash myself.",
+     "heSentence": "אני רוחץ את עצמי."
+    }
+   ]
+  },
+  {
+   "en": "name",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שם",
+     "sentence": "My name is Dan.",
+     "heSentence": "השם שלי דן.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "near",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "קרוב",
+     "sentence": "The shop is near the school.",
+     "heSentence": "החנות קרובה לבית הספר.",
+     "heWordInSentence": "קרובה"
+    }
+   ]
+  },
+  {
+   "en": "need",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "צריך",
+     "sentence": "I need help.",
+     "heSentence": "אני צריך עזרה."
+    }
+   ]
+  },
+  {
+   "en": "neighbor",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "שכן",
+     "sentence": "My neighbor is nice.",
+     "heSentence": "השכן שלי נחמד."
+    }
+   ]
+  },
+  {
+   "en": "never",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "אף פעם",
+     "sentence": "I never sleep late.",
+     "heSentence": "אני אף פעם לא ישן מאוחר."
+    }
+   ]
+  },
+  {
+   "en": "new",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "חדש",
+     "sentence": "My shirt is new.",
+     "heSentence": "החולצה שלי חדשה.",
+     "heWordInSentence": "חדשה"
+    }
+   ]
+  },
+  {
+   "en": "news",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חדשות",
+     "sentence": "I watch the news.",
+     "heSentence": "אני צופה בחדשות."
+    }
+   ]
+  },
+  {
+   "en": "next",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "הבא",
+     "sentence": "The next lesson is math.",
+     "heSentence": "השיעור הבא הוא מתמטיקה."
+    }
+   ]
+  },
+  {
+   "en": "next to",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "ליד",
+     "sentence": "I sit next to the window.",
+     "heSentence": "אני יושב ליד החלון."
+    }
+   ]
+  },
+  {
+   "en": "nice",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "נחמד",
+     "sentence": "The teacher is nice.",
+     "heSentence": "המורה נחמד."
+    }
+   ]
+  },
+  {
+   "en": "night",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "לילה",
+     "sentence": "The night is quiet.",
+     "heSentence": "הלילה שקט."
+    }
+   ]
+  },
+  {
+   "en": "nine",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "תשע",
+     "sentence": "I have nine pencils.",
+     "heSentence": "יש לי תשעה עפרונות.",
+     "heWordInSentence": "תשעה"
+    }
+   ]
+  },
+  {
+   "en": "nineteen",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "תשע עשרה",
+     "sentence": "My cousin is nineteen.",
+     "heSentence": "בן הדוד שלי בן תשע עשרה."
+    }
+   ]
+  },
+  {
+   "en": "ninety",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "תשעים",
+     "sentence": "My grade was ninety.",
+     "heSentence": "הציון שלי היה תשעים."
+    }
+   ]
+  },
+  {
+   "en": "no",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "לא",
+     "sentence": "No, I am busy.",
+     "heSentence": "לא, אני עסוק."
+    }
+   ]
+  },
+  {
+   "en": "nobody",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "אף אחד",
+     "sentence": "Nobody is here.",
+     "heSentence": "אף אחד לא כאן."
+    }
+   ]
+  },
+  {
+   "en": "no-one",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "אף אדם",
+     "sentence": "No-one knows the answer.",
+     "heSentence": "אף אדם לא יודע את התשובה."
+    }
+   ]
+  },
+  {
+   "en": "not",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "אין",
+     "sentence": "This is not my bag.",
+     "heSentence": "זה אינו התיק שלי.",
+     "heWordInSentence": "אינו"
+    }
+   ]
+  },
+  {
+   "en": "notebook",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מחברת",
+     "sentence": "I write in my notebook.",
+     "heSentence": "אני כותב במחברת שלי."
+    }
+   ]
+  },
+  {
+   "en": "nothing",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "כלום",
+     "sentence": "I see nothing.",
+     "heSentence": "אני לא רואה כלום."
+    }
+   ]
+  },
+  {
+   "en": "November",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "נובמבר",
+     "sentence": "It is cold in November.",
+     "heSentence": "קר בנובמבר."
+    }
+   ]
+  },
+  {
+   "en": "now",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "עכשיו",
+     "sentence": "Come now!",
+     "heSentence": "בוא עכשיו!"
+    }
+   ]
+  },
+  {
+   "en": "number",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מספר",
+     "sentence": "What is your phone number?",
+     "heSentence": "מה מספר הטלפון שלך?"
+    }
+   ]
+  },
+  {
+   "en": "October",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אוקטובר",
+     "sentence": "School starts in October.",
+     "heSentence": "בית הספר מתחיל באוקטובר."
+    }
+   ]
+  },
+  {
+   "en": "of",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "של",
+     "sentence": "the color of the sky",
+     "heSentence": "הצבע של השמיים"
+    }
+   ]
+  },
+  {
+   "en": "often",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "לעתים קרובות",
+     "sentence": "I often read books.",
+     "heSentence": "אני לעתים קרובות קורא ספרים."
+    }
+   ]
+  },
+  {
+   "en": "OK / okay",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "בסדר גמור",
+     "sentence": "Everything is OK.",
+     "heSentence": "הכל בסדר גמור."
+    }
+   ]
+  },
+  {
+   "en": "old",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "זקן",
+     "sentence": "My grandfather is old.",
+     "heSentence": "סבא שלי זקן.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "on",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "על",
+     "sentence": "The book is on the table.",
+     "heSentence": "הספר על השולחן."
+    }
+   ]
+  },
+  {
+   "en": "once",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "פעם אחת",
+     "sentence": "I read the book once.",
+     "heSentence": "קראתי את הספר פעם אחת."
+    }
+   ]
+  },
+  {
+   "en": "once upon a time",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "היה היה",
+     "sentence": "Once upon a time there was a king.",
+     "heSentence": "היה היה מלך.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "one",
+   "senses": [
+    {
+     "pos": "num",
+     "he": "אחד",
+     "sentence": "I have one brother.",
+     "heSentence": "יש לי אח אחד."
+    }
+   ]
+  },
+  {
+   "en": "only",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "בלבד",
+     "sentence": "I have only one pen.",
+     "heSentence": "יש לי עט אחד בלבד."
+    }
+   ]
+  },
+  {
+   "en": "open",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "פותח",
+     "sentence": "I open the window.",
+     "heSentence": "אני פותח את החלון."
+    },
+    {
+     "pos": "adj",
+     "he": "פתוח",
+     "sentence": "The shop is open.",
+     "heSentence": "החנות פתוחה.",
+     "heWordInSentence": "פתוחה"
+    }
+   ]
+  },
+  {
+   "en": "or",
+   "senses": [
+    {
+     "pos": "conj",
+     "he": "או",
+     "sentence": "Tea or coffee?",
+     "heSentence": "תה או קפה?"
+    }
+   ]
+  },
+  {
+   "en": "other",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "אחר",
+     "sentence": "Give me the other book.",
+     "heSentence": "תן לי את הספר האחר.",
+     "heWordInSentence": "האחר"
+    }
+   ]
+  },
+  {
+   "en": "our",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "שלנו",
+     "sentence": "This is our house.",
+     "heSentence": "זה הבית שלנו."
+    }
+   ]
+  },
+  {
+   "en": "ourselves",
+   "senses": [
+    {
+     "pos": "pron",
+     "he": "עצמנו",
+     "sentence": "We help ourselves.",
+     "heSentence": "אנחנו עוזרים לעצמנו."
+    }
+   ]
+  },
+  {
+   "en": "out",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "בחוץ",
+     "sentence": "The children are out.",
+     "heSentence": "הילדים בחוץ."
+    }
+   ]
+  },
+  {
+   "en": "over",
+   "senses": [
+    {
+     "pos": "prep",
+     "he": "מעל ל",
+     "sentence": "The plane flies over the city.",
+     "heSentence": "המטוס עף מעל לעיר."
+    }
+   ]
+  },
+  {
+   "en": "own",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "משלו",
+     "sentence": "He writes his own music.",
+     "heSentence": "הוא כותב מוזיקה משלו.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "page",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "עמוד",
+     "sentence": "Read the first page.",
+     "heSentence": "תקרא את העמוד הראשון."
+    }
+   ]
+  },
+  {
+   "en": "paper",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "נייר",
+     "sentence": "I need paper.",
+     "heSentence": "אני צריך נייר."
+    }
+   ]
+  },
+  {
+   "en": "parents",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "הורים",
+     "sentence": "My parents work.",
+     "heSentence": "ההורים שלי עובדים."
+    }
+   ]
+  },
+  {
+   "en": "part",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חלק",
+     "sentence": "This is the best part.",
+     "heSentence": "זה החלק הכי טוב."
+    }
+   ]
+  },
+  {
+   "en": "past",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "עבר",
+     "sentence": "In the past we lived here.",
+     "heSentence": "בעבר גרנו כאן.",
+     "heWordInSentence": "בעבר"
+    }
+   ]
+  },
+  {
+   "en": "pay",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "משלם",
+     "sentence": "I pay for the book.",
+     "heSentence": "אני משלם על הספר."
+    }
+   ]
+  },
+  {
+   "en": "pen",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "עט",
+     "sentence": "My pen is blue.",
+     "heSentence": "העט שלי כחול."
+    }
+   ]
+  },
+  {
+   "en": "pencil",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "עיפרון",
+     "sentence": "I write with a pencil.",
+     "heSentence": "אני כותב עם עיפרון."
+    }
+   ]
+  },
+  {
+   "en": "people",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אנשים",
+     "sentence": "Many people came.",
+     "heSentence": "אנשים רבים הגיעו."
+    }
+   ]
+  },
+  {
+   "en": "perhaps",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "ייתכן",
+     "sentence": "Perhaps he is right.",
+     "heSentence": "ייתכן שהוא צודק."
+    }
+   ]
+  },
+  {
+   "en": "person",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "אדם",
+     "sentence": "He is a good person.",
+     "heSentence": "הוא אדם טוב."
+    }
+   ]
+  },
+  {
+   "en": "pick up",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מרים",
+     "sentence": "I pick up the bag.",
+     "heSentence": "אני מרים את התיק."
+    }
+   ]
+  },
+  {
+   "en": "picture",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "תמונה",
+     "sentence": "The picture is beautiful.",
+     "heSentence": "התמונה יפה."
+    }
+   ]
+  },
+  {
+   "en": "piece (of)",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "חתיכה",
+     "sentence": "I want a piece of cake.",
+     "heSentence": "אני רוצה חתיכה של עוגה."
+    }
+   ]
+  },
+  {
+   "en": "place",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "מקום",
+     "sentence": "This is a quiet place.",
+     "heSentence": "זה מקום שקט."
+    }
+   ]
+  },
+  {
+   "en": "plan",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "תוכנית",
+     "sentence": "This is a good plan.",
+     "heSentence": "זו תוכנית טובה."
+    },
+    {
+     "pos": "v",
+     "he": "מתכנן",
+     "sentence": "I plan a trip.",
+     "heSentence": "אני מתכנן טיול."
+    }
+   ]
+  },
+  {
+   "en": "play",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "משחק",
+     "sentence": "The children play outside.",
+     "heSentence": "הילדים משחקים בחוץ.",
+     "heWordInSentence": "משחקים"
+    }
+   ]
+  },
+  {
+   "en": "play a game",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "משחק במשחק",
+     "sentence": "We play a game together.",
+     "heSentence": "אנחנו משחקים במשחק ביחד.",
+     "heWordInSentence": "משחקים במשחק",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "please",
+   "senses": [
+    {
+     "pos": "adv",
+     "he": "בבקשה",
+     "sentence": "Please help me.",
+     "heSentence": "בבקשה תעזור לי."
+    }
+   ]
+  },
+  {
+   "en": "poor",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "עני",
+     "sentence": "The man is poor.",
+     "heSentence": "האיש עני."
+    }
+   ]
+  },
+  {
+   "en": "possible",
+   "senses": [
+    {
+     "pos": "adj",
+     "he": "אפשרי",
+     "sentence": "It is possible.",
+     "heSentence": "זה אפשרי."
+    }
+   ]
+  },
+  {
+   "en": "practice",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "מתאמן",
+     "sentence": "I practice every day.",
+     "heSentence": "אני מתאמן כל יום."
+    }
+   ]
+  },
+  {
+   "en": "problem",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "בעיה",
+     "sentence": "This is a big problem.",
+     "heSentence": "זו בעיה גדולה."
+    }
+   ]
+  },
+  {
+   "en": "no problem!",
+   "senses": [
+    {
+     "pos": "phr",
+     "he": "אין בעיה",
+     "sentence": "No problem, I can help.",
+     "heSentence": "אין בעיה, אני יכול לעזור.",
+     "fromPdf": true
+    }
+   ]
+  },
+  {
+   "en": "project",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "פרויקט",
+     "sentence": "The project is ready.",
+     "heSentence": "הפרויקט מוכן."
+    }
+   ]
+  },
+  {
+   "en": "pupil",
+   "senses": [
+    {
+     "pos": "n",
+     "he": "תלמיד",
+     "sentence": "The pupil reads well.",
+     "heSentence": "התלמיד קורא טוב."
+    }
+   ]
+  },
+  {
+   "en": "push",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "דוחף",
+     "sentence": "I push the door.",
+     "heSentence": "אני דוחף את הדלת."
+    }
+   ]
+  },
+  {
+   "en": "put",
+   "senses": [
+    {
+     "pos": "v",
+     "he": "שם",
+     "sentence": "I put the book on the table.",
+     "heSentence": "אני שם את הספר על השולחן."
+    }
+   ]
+  }
+ ]
+}
