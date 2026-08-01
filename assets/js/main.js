@@ -2,8 +2,9 @@ import { t, setLang, currentLang, applyStatic } from './i18n.js';
 import { app as appStore, storeFor } from './store.js';
 import * as auth from './auth.js';
 import { loadWords, shuffle, newSeed, filterDeck } from './deck.js';
-import { createStats } from './stats.js';
+import { createStats, todayKey } from './stats.js';
 import { createSettings } from './settings.js';
+import { createFavorites } from './favorites.js';
 import { createPractice } from './practice.js';
 import { buildQuiz, createQuiz } from './quiz.js';
 import { evaluate, allAwards, describe } from './awards.js';
@@ -19,6 +20,7 @@ let groups = [];
 let store = null;
 let stats = null;
 let settings = null;
+let favorites = null;
 let practice = null;
 let quiz = null;
 let quizBuffer = [];
@@ -149,15 +151,15 @@ function renderHome() {
 
   const list = $('deck-list');
   list.textContent = '';
-  const decks = [{ group: 'all', count: words.length }, ...groups];
-  for (const deck of decks) {
+  for (const deck of deckOptions()) {
     const button = document.createElement('button');
-    button.className = `deck${deck.group === selectedGroup ? ' selected' : ''}`;
+    button.className = `deck${deck.group === selectedGroup ? ' selected' : ''}${deck.special ? ' special' : ''}`;
     const name = document.createElement('b');
-    name.textContent = deck.group === 'all' ? t('home.allWords') : deck.group;
+    name.textContent = deck.label;
     const count = document.createElement('small');
-    count.textContent = t('home.wordsCount', { n: deck.count });
+    count.textContent = deck.count === 1 ? t('home.wordsCountOne') : t('home.wordsCount', { n: deck.count });
     button.append(name, count);
+    button.disabled = deck.count === 0;
     button.addEventListener('click', () => {
       selectedGroup = deck.group;
       renderHome();
@@ -166,18 +168,67 @@ function renderHome() {
   }
 }
 
+// The letter decks plus the two curated ones. Both curated decks are always
+// listed (disabled when empty) so she knows they exist before filling them.
+function deckOptions() {
+  return [
+    { group: 'all', label: t('home.allWords'), count: words.length },
+    { group: 'failed', label: t('home.failedDeck'), count: stats.failedCount(), special: true },
+    { group: 'favorites', label: t('home.favoritesDeck'), count: favorites.count(), special: true },
+    ...groups.map((g) => ({ group: g.group, label: g.group, count: g.count })),
+  ];
+}
+
+function wordsInDeck(group) {
+  if (group === 'failed') {
+    const index = new Map(words.map((w) => [w.id, w]));
+    return stats.failedWords().map((f) => index.get(f.id)).filter(Boolean);
+  }
+  if (group === 'favorites') {
+    const wanted = new Set(favorites.ids());
+    return words.filter((w) => wanted.has(w.id));
+  }
+  return filterDeck(words, group);
+}
+
+function deckLabelFor(group) {
+  return deckOptions().find((d) => d.group === group)?.label ?? group;
+}
+
 function startPractice(customWords, label) {
-  const seed = store.get('seed', null) ?? resetSeed();
-  const deck = customWords ?? shuffle(filterDeck(words, selectedGroup), seed);
-  const deckLabel = label ?? (selectedGroup === 'all' ? t('home.allWords') : selectedGroup);
-  practice.setDeck(deck, deckLabel, { keepPosition: !customWords });
+  const pool = customWords ?? wordsInDeck(selectedGroup);
+  if (!pool.length) {
+    toast(t('home.emptyDeck'));
+    return;
+  }
+  const deck = customWords ?? shuffle(pool, currentSeed());
+  practice.setDeck(deck, label ?? deckLabelFor(selectedGroup), { keepPosition: !customWords });
   showView('practice');
 }
 
+// One seed per profile per day: a reload keeps her place, but a new day deals a
+// new order. Without this, "stay signed in" meant the same order forever.
+function currentSeed() {
+  const saved = store.get('seed', null);
+  if (saved && saved.day === todayKey()) return saved.value;
+  return resetSeed();
+}
+
 function resetSeed() {
-  const seed = newSeed();
-  store.set('seed', seed);
-  return seed;
+  const value = newSeed();
+  store.set('seed', { value, day: todayKey() });
+  return value;
+}
+
+// Manual reshuffle: new order for every deck, starting from the first card.
+function shuffleAll() {
+  resetSeed();
+  store.remove('position');
+  if (currentView === 'practice') {
+    const pool = wordsInDeck(selectedGroup);
+    if (pool.length) practice.reorder(shuffle(pool, currentSeed()));
+  }
+  toast(t('home.shuffled'));
 }
 
 /* ── quiz flow ──────────────────────────────────────────────────── */
@@ -279,7 +330,8 @@ function renderStats() {
     review.textContent = t('stats.noReview');
   } else {
     const index = new Map(words.map((w) => [w.id, w]));
-    for (const { id, misses } of trouble) {
+    const needed = settings.get('successesToClear');
+    for (const { id, misses, successes } of trouble) {
       const word = index.get(id);
       if (!word) continue;
       const row = document.createElement('div');
@@ -290,14 +342,23 @@ function renderStats() {
       he.textContent = word.senses[0].he;
       const count = document.createElement('span');
       count.className = 'miss';
-      count.textContent = t('stats.missedTimes', { n: misses });
+      // Show how close the word is to clearing, not just how often it was missed.
+      count.textContent =
+        successes > 0
+          ? t('stats.needsMore', { n: Math.max(1, needed - successes) })
+          : t('stats.missedTimes', { n: misses });
       row.append(en, he, count);
-      row.addEventListener('click', () => {
-        const deck = trouble.map((x) => index.get(x.id)).filter(Boolean);
-        startPractice(deck, t('stats.wordsToReview'));
-      });
       review.append(row);
     }
+
+    const practiceFailed = document.createElement('button');
+    practiceFailed.className = 'ghost';
+    practiceFailed.textContent = t('stats.practiceFailed');
+    practiceFailed.addEventListener('click', () => {
+      selectedGroup = 'failed';
+      startPractice();
+    });
+    review.append(practiceFailed);
   }
 
   // awards
@@ -325,6 +386,7 @@ const SETTING_FIELDS = {
   'set-words-before-quiz': 'wordsBeforeQuiz',
   'set-answer-options': 'answerOptions',
   'set-quiz-length': 'quizLength',
+  'set-successes-to-clear': 'successesToClear',
   'set-goal-minutes': 'goalMinutes',
   'set-goal-words': 'goalWords',
 };
@@ -451,7 +513,11 @@ async function enterApp() {
   $('user-chip').textContent = user.displayName.slice(0, 1).toUpperCase();
   $('user-chip').style.background = user.avatarColor;
 
+  favorites = createFavorites(store);
+
   // A fresh sign-in reshuffles; a reload keeps the order so she keeps her place.
+  // (The per-day seed in currentSeed() is what stops a permanently signed-in
+  // phone from showing the same order forever.)
   const lastSession = store.get('lastSession', null);
   const sessionMark = appStore.get('bootId', null);
   if (lastSession !== sessionMark) {
@@ -464,9 +530,21 @@ async function enterApp() {
     quizBuffer = words.filter((w) => bufferIds.has(w.id));
   }
 
-  practice = createPractice({ store, stats, settings, onWordPracticed, toast });
+  practice = createPractice({
+    store,
+    stats,
+    favorites,
+    onWordPracticed,
+    onFavoriteChange: () => {
+      if (currentView === 'home') renderHome();
+    },
+    onShuffle: shuffleAll,
+    toast,
+  });
+
   quiz = createQuiz({
     stats,
+    settings,
     onFinish: ({ comeback }) => {
       stats.flush();
       checkAwards({ comeback });
@@ -475,6 +553,7 @@ async function enterApp() {
       if (missed.length) startPractice(missed, t('quiz.missedTitle'));
       else showView('practice');
     },
+    onWordCleared: (word) => toast(t('stats.clearedWord', { word: word.en })),
   });
 
   authEl.hidden = true;
@@ -493,6 +572,7 @@ function wireChrome() {
 
   $('start-practice').addEventListener('click', () => startPractice());
   $('go-stats').addEventListener('click', () => showView('stats'));
+  $('shuffle-all').addEventListener('click', shuffleAll);
 
   $('lang-toggle').addEventListener('click', () => {
     const next = currentLang() === 'he' ? 'en' : 'he';

@@ -43,7 +43,10 @@
         </div>
       </div>
 
-      <h2 data-i18n="home.chooseDeck"></h2>
+      <div class="section-head">
+        <h2 data-i18n="home.chooseDeck"></h2>
+        <button id="shuffle-all" class="chip"><span aria-hidden="true">🔀</span> <span data-i18n="home.shuffle"></span></button>
+      </div>
       <div id="deck-list" class="deck-list"></div>
 
       <button id="start-practice" class="primary big" data-i18n="home.startPractice"></button>
@@ -55,10 +58,12 @@
       <div class="practice-head">
         <span id="practice-progress" class="muted"></span>
         <span id="practice-deck" class="muted"></span>
+        <button id="shuffle-deck" class="chip" title="shuffle"><span aria-hidden="true">🔀</span></button>
       </div>
 
       <div id="card-stage">
         <article id="card" class="card" tabindex="0" role="group" aria-roledescription="flashcard">
+          <button id="fav-toggle" class="fav" aria-pressed="false" aria-label="favorite">☆</button>
           <div class="card-face card-front">
             <span id="card-senses-chip" class="senses-chip" hidden></span>
             <h2 id="card-word" class="word"></h2>
@@ -145,6 +150,11 @@
         <span data-i18n="settings.quizLength"></span>
         <input type="number" id="set-quiz-length" min="3" max="20" step="1">
         <small data-i18n="settings.quizLengthHelp"></small>
+      </label>
+      <label class="field">
+        <span data-i18n="settings.successesToClear"></span>
+        <input type="number" id="set-successes-to-clear" min="1" max="10" step="1">
+        <small data-i18n="settings.successesToClearHelp"></small>
       </label>
       <label class="field">
         <span data-i18n="settings.dailyGoalMinutes"></span>

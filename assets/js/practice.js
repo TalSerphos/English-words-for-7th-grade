@@ -49,7 +49,7 @@ const numberChip = (i) => {
   return chip;
 };
 
-export function createPractice({ store, stats, settings, onWordPracticed, toast }) {
+export function createPractice({ store, stats, favorites, onWordPracticed, onFavoriteChange, onShuffle, toast }) {
   const stage = document.getElementById('card-stage');
   const card = document.getElementById('card');
   const front = card.querySelector('.card-front');
@@ -62,6 +62,8 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
   const deckEl = document.getElementById('practice-deck');
   const cueUp = stage.querySelector('.cue-up');
   const cueDown = stage.querySelector('.cue-down');
+  const favBtn = document.getElementById('fav-toggle');
+  const shuffleBtn = document.getElementById('shuffle-deck');
 
   let deck = [];
   let index = 0;
@@ -124,6 +126,8 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
       translationsEl.append(note);
     }
 
+    renderFavourite();
+
     progressEl.textContent = t('practice.of', { i: index + 1, n: deck.length });
     deckEl.textContent = deckLabel;
     store.set('position', { index, deckLabel });
@@ -136,6 +140,23 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
     const word = deck[index];
     if (!word) return;
     if (stats.markPracticed(word.id)) onWordPracticed(word);
+  }
+
+  function renderFavourite() {
+    const word = deck[index];
+    const starred = Boolean(word && favorites.has(word.id));
+    favBtn.textContent = starred ? '★' : '☆';
+    favBtn.classList.toggle('on', starred);
+    favBtn.setAttribute('aria-pressed', String(starred));
+  }
+
+  function toggleFavourite() {
+    const word = deck[index];
+    if (!word) return;
+    const starred = favorites.toggle(word.id);
+    renderFavourite();
+    toast(t(starred ? 'practice.favAdded' : 'practice.favRemoved'));
+    onFavoriteChange?.();
   }
 
   /* ── actions ───────────────────────────────────────────────────── */
@@ -183,6 +204,15 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
   const setTransform = (dx, dy) => {
     card.style.transform = `translate(${dx}px, ${dy}px) rotate(${dx / 28}deg)`;
   };
+
+  // The star sits on top of the card, which owns the gesture handlers — without
+  // stopping propagation, tapping it would also start a swipe.
+  favBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
+  favBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stats.poke();
+    toggleFavourite();
+  });
 
   card.addEventListener('pointerdown', (e) => {
     if (e.button != null && e.button !== 0) return;
@@ -252,6 +282,7 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
     else if (e.key === back) go(-1);
     else if (e.key === 'ArrowUp') pronounce();
     else if (e.key === 'ArrowDown' || e.key === ' ') reveal();
+    else if (e.key === 'f' || e.key === 'F') toggleFavourite();
     else return;
     e.preventDefault();
     stats.poke();
@@ -269,6 +300,11 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
     void rtl;
   });
 
+  shuffleBtn.addEventListener('click', () => {
+    stats.poke();
+    onShuffle();
+  });
+
   return {
     setDeck(words, label, { keepPosition = false } = {}) {
       deck = words;
@@ -277,7 +313,14 @@ export function createPractice({ store, stats, settings, onWordPracticed, toast 
       index = keepPosition && saved?.deckLabel === label && saved.index < words.length ? saved.index : 0;
       render();
     },
+    // Reorder the deck in place and go back to the first card.
+    reorder(words) {
+      deck = words;
+      index = 0;
+      render();
+    },
     refresh: render,
+    refreshFavourite: renderFavourite,
     current: () => deck[index],
     size: () => deck.length,
   };

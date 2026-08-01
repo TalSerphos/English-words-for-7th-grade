@@ -53,7 +53,7 @@ export function buildQuiz(buffer, allWords, { quizLength, answerOptions }) {
   return questions;
 }
 
-export function createQuiz({ stats, onFinish, onPracticeMissed }) {
+export function createQuiz({ stats, settings, onFinish, onPracticeMissed, onWordCleared }) {
   const playEl = document.getElementById('quiz-play');
   const resultsEl = document.getElementById('quiz-results');
   const wordEl = document.getElementById('quiz-word');
@@ -106,10 +106,13 @@ export function createQuiz({ stats, onFinish, onPracticeMissed }) {
 
     if (right) {
       correctCount += 1;
-      // Getting a word right that she previously missed is worth celebrating.
+      // Getting a word right that she previously missed is worth celebrating —
+      // but it only leaves the failed list after enough correct answers in a row.
       if (stats.wasMissed(question.word.id)) {
         comeback = true;
-        stats.clearMiss(question.word.id);
+        if (stats.recordSuccess(question.word.id, settings.get('successesToClear'))) {
+          onWordCleared?.(question.word);
+        }
       }
     } else {
       missed.push(question.word);

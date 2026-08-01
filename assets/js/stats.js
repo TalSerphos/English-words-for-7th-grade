@@ -15,6 +15,9 @@ const dayKeyOffset = (offset) => {
 export function createStats(store) {
   const days = store.get('days', {});
   const missCounts = store.get('missCounts', {});
+  // Consecutive correct answers since a word was last missed. A word leaves the
+  // failed list only after enough of them (configurable, default 2).
+  const successCounts = store.get('successCounts', {});
 
   const day = (key = todayKey()) => {
     if (!days[key]) days[key] = { seconds: 0, words: [], quizzes: [], reveals: 0, speaks: 0 };
@@ -24,6 +27,7 @@ export function createStats(store) {
   const persist = () => {
     store.set('days', days);
     store.set('missCounts', missCounts);
+    store.set('successCounts', successCounts);
   };
 
   /* ── active-time clock ─────────────────────────────────────────── */
@@ -73,22 +77,39 @@ export function createStats(store) {
     /* ── quiz events ─────────────────────────────────────────────── */
     recordQuiz({ correct, total, missedIds }) {
       day().quizzes.push({ correct, total, missedIds, at: Date.now() });
-      for (const id of missedIds) missCounts[id] = (missCounts[id] ?? 0) + 1;
+      for (const id of missedIds) {
+        missCounts[id] = (missCounts[id] ?? 0) + 1;
+        // Missing it again resets the run of correct answers.
+        delete successCounts[id];
+      }
       persist();
     },
-    clearMiss(wordId) {
-      if (missCounts[wordId]) {
-        missCounts[wordId] -= 1;
-        if (missCounts[wordId] <= 0) delete missCounts[wordId];
+
+    // One correct answer on a failed word. Returns true when the word has now
+    // been answered right enough times to leave the failed list for good.
+    recordSuccess(wordId, needed) {
+      if (!missCounts[wordId]) return false;
+      const runs = (successCounts[wordId] ?? 0) + 1;
+      if (runs >= needed) {
+        delete missCounts[wordId];
+        delete successCounts[wordId];
         persist();
+        return true;
       }
+      successCounts[wordId] = runs;
+      persist();
+      return false;
     },
+
     wasMissed: (wordId) => Boolean(missCounts[wordId]),
-    troubleWords: () =>
+    successesOn: (wordId) => successCounts[wordId] ?? 0,
+    failedCount: () => Object.keys(missCounts).length,
+    // Every failed word, worst first — this is what the "words I got wrong" deck uses.
+    failedWords: () =>
       Object.entries(missCounts)
         .sort((a, b) => b[1] - a[1])
-        .slice(0, 12)
-        .map(([id, misses]) => ({ id, misses })),
+        .map(([id, misses]) => ({ id, misses, successes: successCounts[id] ?? 0 })),
+    troubleWords: () => api.failedWords().slice(0, 12),
 
     /* ── derived numbers ─────────────────────────────────────────── */
     summary() {

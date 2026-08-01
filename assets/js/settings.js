@@ -2,6 +2,7 @@ const DEFAULTS = {
   wordsBeforeQuiz: 25,
   answerOptions: 4,
   quizLength: 10,
+  successesToClear: 2,
   goalMinutes: 10,
   goalWords: 25,
   lang: 'he',
@@ -11,6 +12,7 @@ const LIMITS = {
   wordsBeforeQuiz: [5, 100],
   answerOptions: [2, 6],
   quizLength: [3, 20],
+  successesToClear: [1, 10],
   goalMinutes: [1, 120],
   goalWords: [1, 300],
 };

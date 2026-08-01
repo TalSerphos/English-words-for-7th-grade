@@ -157,9 +157,17 @@ button {
 .deck.selected { border-color: var(--brand); background: var(--surface-2); box-shadow: 0 0 0 2px rgba(124, 92, 255, .3); }
 .deck b { display: block; font-size: .95rem; }
 .deck small { color: var(--muted); font-size: .68rem; }
+.deck.special { border-style: dashed; }
+.deck.special b { color: var(--warn); }
+.deck:disabled { opacity: .4; cursor: default; }
+
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.section-head h2 { margin-block-end: 10px; }
 
 /* ── practice card ─────────────────────────────────────────────── */
-.practice-head { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: .78rem; }
+.practice-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: .78rem; }
+.practice-head #practice-deck { flex: 1; }
+.practice-head .chip { padding: 5px 10px; font-size: .9rem; }
 
 #card-stage { position: relative; height: min(62vh, 460px); perspective: 1200px; }
 
@@ -195,6 +203,18 @@ button {
 .card.multi .sentence { font-size: .92rem; }
 .sentence .hit { color: var(--text); font-weight: 700; border-bottom: 2px solid var(--brand); }
 .sense-num { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-inline-end: 6px; font-size: .7rem; font-weight: 700; color: #fff; background: var(--brand); border-radius: 50%; vertical-align: middle; }
+
+.fav {
+  position: absolute; top: 10px; inset-inline-end: 12px; z-index: 2;
+  padding: 6px 10px;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--muted);
+  /* The card owns the swipe gestures; the star must stay tappable on its own. */
+  touch-action: manipulation;
+}
+.fav.on { color: var(--warn); }
+.fav:active { transform: scale(.9); }
 
 .senses-chip {
   position: absolute; top: 14px; inset-inline-start: 14px;

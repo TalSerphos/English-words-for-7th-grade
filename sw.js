@@ -1,6 +1,6 @@
 // Cache-first shell so the app opens instantly and works with no signal.
 // Bump CACHE when shipping changes, otherwise phones keep the old copy.
-const CACHE = 'vocab-v1';
+const CACHE = 'vocab-v2';
 
 const SHELL = [
   '.',
@@ -15,6 +15,7 @@ const SHELL = [
   'assets/js/practice.js',
   'assets/js/quiz.js',
   'assets/js/settings.js',
+  'assets/js/favorites.js',
   'assets/js/speech.js',
   'assets/js/stats.js',
   'assets/js/awards.js',
