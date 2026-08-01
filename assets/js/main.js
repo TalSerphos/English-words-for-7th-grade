@@ -25,6 +25,9 @@ let practice = null;
 let quiz = null;
 let quizBuffer = [];
 let selectedGroup = 'all';
+// The deck actually loaded into the practice view, which is not always the
+// selected one — quiz results and the stats list push custom decks too.
+let activeDeckGroup = 'all';
 let currentView = 'home';
 
 /* ── small helpers ──────────────────────────────────────────────── */
@@ -195,12 +198,13 @@ function deckLabelFor(group) {
   return deckOptions().find((d) => d.group === group)?.label ?? group;
 }
 
-function startPractice(customWords, label) {
+function startPractice(customWords, label, group) {
   const pool = customWords ?? wordsInDeck(selectedGroup);
   if (!pool.length) {
     toast(t('home.emptyDeck'));
     return;
   }
+  activeDeckGroup = group ?? (customWords ? 'custom' : selectedGroup);
   const deck = customWords ?? shuffle(pool, currentSeed());
   practice.setDeck(deck, label ?? deckLabelFor(selectedGroup), { keepPosition: !customWords });
   showView('practice');
@@ -237,28 +241,47 @@ function onWordPracticed(word) {
   store.set('quizBuffer', quizBuffer.map((w) => w.id));
   checkAwards();
 
-  if (quizBuffer.length >= settings.get('wordsBeforeQuiz')) offerQuiz();
+  if (quizBuffer.length >= settings.get('wordsBeforeQuiz')) offerQuiz(quizBuffer);
 }
 
-function offerQuiz() {
+// What the next quiz will be built from, and whether taking it should also drain
+// the rolling practice buffer.
+let pendingQuiz = null;
+
+function offerQuiz(pool, { fromBuffer = true, title } = {}) {
   const sheet = $('quiz-offer');
-  if (!sheet.hidden || currentView !== 'practice') return;
-  const length = settings.effectiveQuizLength(quizBuffer.length);
-  $('quiz-offer-title').textContent = t('quiz.offerTitle', { n: quizBuffer.length });
+  if (!sheet.hidden || currentView !== 'practice' || !pool.length) return false;
+  pendingQuiz = { pool, fromBuffer };
+  const length = settings.effectiveQuizLength(pool.length);
+  $('quiz-offer-title').textContent = title ?? t('quiz.offerTitle', { n: pool.length });
   $('quiz-offer-body').textContent = t('quiz.offerBody', { q: length });
   sheet.hidden = false;
+  return true;
 }
 
 function beginQuiz() {
-  const questions = buildQuiz(quizBuffer, words, {
-    quizLength: settings.effectiveQuizLength(quizBuffer.length),
-    answerOptions: settings.effectiveOptions(quizBuffer.length),
+  const { pool, fromBuffer } = pendingQuiz ?? { pool: quizBuffer, fromBuffer: true };
+  const questions = buildQuiz(pool, words, {
+    quizLength: settings.effectiveQuizLength(pool.length),
+    // Not clamped to the pool: a short error list still deserves the full number
+    // of choices, and buildQuiz tops the distractors up from the whole list.
+    answerOptions: settings.get('answerOptions'),
   });
-  quizBuffer = [];
-  store.set('quizBuffer', []);
+  if (fromBuffer) {
+    quizBuffer = [];
+    store.set('quizBuffer', []);
+  }
+  pendingQuiz = null;
   quiz.start(questions);
   showView('quiz');
   stats.startClock();
+}
+
+// Finishing a pass over the error list always earns a quiz, however short the
+// list is — that is the whole point of practicing the words she got wrong.
+function onDeckComplete(deckWords) {
+  if (activeDeckGroup !== 'failed') return false;
+  return offerQuiz(deckWords, { fromBuffer: false, title: t('quiz.offerFailedTitle') });
 }
 
 /* ── stats ──────────────────────────────────────────────────────── */
@@ -539,6 +562,7 @@ async function enterApp() {
       if (currentView === 'home') renderHome();
     },
     onShuffle: shuffleAll,
+    onDeckComplete,
     toast,
   });
 
@@ -550,7 +574,8 @@ async function enterApp() {
       checkAwards({ comeback });
     },
     onPracticeMissed: (missed) => {
-      if (missed.length) startPractice(missed, t('quiz.missedTitle'));
+      // These are error-list words too, so finishing them earns another quiz.
+      if (missed.length) startPractice(missed, t('quiz.missedTitle'), 'failed');
       else showView('practice');
     },
     onWordCleared: (word) => toast(t('stats.clearedWord', { word: word.en })),

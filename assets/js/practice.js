@@ -49,7 +49,16 @@ const numberChip = (i) => {
   return chip;
 };
 
-export function createPractice({ store, stats, favorites, onWordPracticed, onFavoriteChange, onShuffle, toast }) {
+export function createPractice({
+  store,
+  stats,
+  favorites,
+  onWordPracticed,
+  onFavoriteChange,
+  onShuffle,
+  onDeckComplete,
+  toast,
+}) {
   const stage = document.getElementById('card-stage');
   const card = document.getElementById('card');
   const front = card.querySelector('.card-front');
@@ -163,15 +172,19 @@ export function createPractice({ store, stats, favorites, onWordPracticed, onFav
   function go(step) {
     if (!deck.length) return;
     const next = index + step;
+    let wrapped = false;
     if (next < 0) {
+      // Going back past the start is not "finishing" the deck.
       index = deck.length - 1;
     } else if (next >= deck.length) {
       index = 0;
-      toast(t('practice.deckDone'));
+      wrapped = true;
     } else {
       index = next;
     }
     render();
+    // Handled after render so the handler can open a sheet over a fresh card.
+    if (wrapped && !onDeckComplete?.(deck.slice())) toast(t('practice.deckDone'));
   }
 
   function reveal() {

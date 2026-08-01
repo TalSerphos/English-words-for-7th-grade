@@ -1,6 +1,6 @@
 // Cache-first shell so the app opens instantly and works with no signal.
 // Bump CACHE when shipping changes, otherwise phones keep the old copy.
-const CACHE = 'vocab-v2';
+const CACHE = 'vocab-v3';
 
 const SHELL = [
   '.',

@@ -37,9 +37,9 @@ export function createSettings(store) {
       return { ...values };
     },
     // A quiz can never have more questions than words available, no matter how
-    // the two settings are combined.
+    // the two settings are combined. The answer count needs no such clamp —
+    // distractors are topped up from the full word list when a pool is small.
     effectiveQuizLength: (available) => Math.max(1, Math.min(values.quizLength, available)),
-    effectiveOptions: (available) => Math.max(2, Math.min(values.answerOptions, Math.max(2, available))),
   };
 }
 
